@@ -28,7 +28,7 @@ public class DayOne implements Day {
             entry("nine", 9));
 
     public void compute() {
-        try (Scanner sc = new Scanner(new File(".\\Day 1.txt"))) {
+        try (Scanner sc = new Scanner(new File(".\\Day One.txt"))) {
             while (sc.hasNextLine()) {
                 workingString = sc.nextLine();
                 pointer = 0;
