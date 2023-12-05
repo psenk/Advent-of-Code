@@ -23,7 +23,9 @@ If any dice draw went over a maximum allowed number, that game is lost.  Otherwi
 Probably could have made this a little cleaner, faster, neater, but it works.'
 
 ** 2nd Star:
-
+I just went in there thinking about the values.  Found where to slot the code in.
+Find the max number associated with each color in all draws per game.  Multiply max numbers together for power level.  Sum all 100 for final total.
+I spent more time on the System.out formating than the code.
 
 Tinkering:
 Created Log
