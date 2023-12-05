@@ -17,9 +17,17 @@ Finished with same two loops from 1st Star above.
 Day Two:
 
 * 1st Star:
-Went with an OOP approach.
+Went with an OOP approach.  At first tried to be hilariously overdetailed with objects but it slowly tapered down.
+Scanner reads down Day Two.txt, turning lines into games.  Each game has an ArrayList of dice draws as int[] (red, green, blue) and an incrementing id integer.
+If any dice draw went over a maximum allowed number, that game is lost.  Otherwise, the game is won, and the game id is added to an accumulating final total.
+Probably could have made this a little cleaner, faster, neater, but it works.'
+
+** 2nd Star:
+
 
 Tinkering:
-Created Log!
+Created Log
 Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
 Moved all code in DayOne into required compute method.
+Created DayTwo solution.
+Editted Main to add DayTwo and compute answer.
