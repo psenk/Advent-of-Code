@@ -9,6 +9,7 @@ public class DayTwo implements Day {
     // [red, green, blue]
     final int[] TOTAL_CUBES = { 12, 13, 14 };
     int sumOfIDs;
+    int sumOfPowerLevels;
 
     public class Game {
         private static int id = 0;
@@ -73,21 +74,38 @@ public class DayTwo implements Day {
 
                 // scanning the draws in the games, comparing against maximum allowable constant
                 boolean winnable = true;
+                int[] maxCubes = { 0, 0, 0 };
                 for (int i = 0; i < game.getDrawsList().size(); i++) {
+
+                    if (game.getDrawsList().get(i)[0] > maxCubes[0]) {
+                        maxCubes[0] = game.getDrawsList().get(i)[0];
+                    }
+                    if (game.getDrawsList().get(i)[1] > maxCubes[1]) {
+                        maxCubes[1] = game.getDrawsList().get(i)[1];
+                    }
+                    if (game.getDrawsList().get(i)[2] > maxCubes[2]) {
+                        maxCubes[2] = game.getDrawsList().get(i)[2];
+                    }
+
                     if (game.getDrawsList().get(i)[0] > TOTAL_CUBES[0] ||
                             game.getDrawsList().get(i)[1] > TOTAL_CUBES[1] ||
                             game.getDrawsList().get(i)[2] > TOTAL_CUBES[2]) {
-                        System.out.println("Game LOST!\n");
+                        System.out.println("\nGame LOST!");
                         winnable = false;
-                        break;
                     }
                 }
                 if (winnable) {
                     sumOfIDs += game.getId();
-                    System.out.println("Game WON!  Adding " + game.getId() + " points!\n");
+                    System.out.println("\nGame WON!  Adding " + game.getId() + " points!");
                 }
+                int powerLevel = maxCubes[0] * maxCubes[1] * maxCubes[2];
+                sumOfPowerLevels += powerLevel;
+                System.out.printf("Max Dice Needed: Red - %d, Green - %d, Blue - %d\n",maxCubes[0], maxCubes[1], maxCubes[2]);
+                System.out.println("Power Level: " +  powerLevel);
+                System.out.println();
             }
             System.out.println("Sum of all winning IDs: " + sumOfIDs);
+            System.out.println("Sum of all power levels: " + sumOfPowerLevels);
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
