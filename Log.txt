@@ -1,0 +1,25 @@
+Day One
+
+* 1st Star:
+Made Day class, Scanner with Day One.txt as file in.  Read one line at a time stored as string.  
+Have two loops that iterate through the string at both ends moving inward until the first digit is found for both.
+Store both digits in order (L/R) as Strings, concatenate together, cast into integer.
+Count up the total calculated integer values for each line.
+
+[thought while writing -- use two pointers in while loop, start and end, move inward]
+
+** 2nd Star:
+Created HashMap of String (e.g "five"), Integer (e.g 5) pairs.
+Examined string of each line for any key in HashMap, scanning with two pointers outwardly, also scanning for any digits.
+Built new string concatenating values of keys scanned and digits scanned.
+Finished with same two loops from 1st Star above.
+
+Day Two:
+
+* 1st Star:
+Went with an OOP approach.
+
+Tinkering:
+Created Log!
+Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
+Moved all code in DayOne into required compute method.
