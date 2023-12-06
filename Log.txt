@@ -42,6 +42,19 @@ Scanned across the schematic.  If I found a digit, I scanned around that digit f
 If a symbol was found, the full part number was compiled and added to total sum.
 All other characters were ignored.
 
+** 2nd Star:
+I refactored a lot of the code that would be duplicated during this part into separate methods.  Ensuring both solves still worked afterward was a bit overwhelming.
+I need to practice sectioning my code a little better, and reducing duplicate lines.
+I scanned for gears (*) in the character array.  When one was found, I scanned around the gear for digits.
+If digit was found, I compiled the digit and added to an ArrayList.  If the size of the ArrayList was greater than 1, the gear ratio was calculated and added to final total.
+
+=====
+
+Day 4
+
+* 1st Star:
+
+
 Files Log:
 Created Log
 Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
