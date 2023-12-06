@@ -14,6 +14,8 @@ Examined string of each line for any key in HashMap, scanning with two pointers 
 Built new string concatenating values of keys scanned and digits scanned.
 Finished with same two loops from 1st Star above.
 
+=====
+
 Day Two:
 
 * 1st Star:
@@ -27,9 +29,23 @@ I just went in there thinking about the values.  Found where to slot the code in
 Find the max number associated with each color in all draws per game.  Multiply max numbers together for power level.  Sum all 100 for final total.
 I spent more time on the System.out formating than the code.
 
-Tinkering:
+=====
+
+Day 3
+
+* 1st Star:
+Lots of stuff here.  I loaded the engine schematic into a 2D character array.  Created a set of all known symbols to look for during scanning.
+I created a function that scans all eight adjacent neighbors around each node.  Had the idea of using an 8 bit binary number as flags with bitwise operations so I tried it.
+Each square had an 8 bit binary "edgelist" with each 1 representing a "scannable" cardinal direction for that square, in this order: N, NE, E, SE, S, SW, W, NW.
+This helped to avoid scanning out of bounds on all edge nodes.
+Scanned across the schematic.  If I found a digit, I scanned around that digit for a symbol using bitwise operators to guide my scanning directions.
+If a symbol was found, the full part number was compiled and added to total sum.
+All other characters were ignored.
+
+Files Log:
 Created Log
 Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
 Moved all code in DayOne into required compute method.
 Created DayTwo solution.
-Editted Main to add DayTwo and compute answer.
+Edited Main to add DayTwo and compute answer.
+Edited Main for Day Three.
