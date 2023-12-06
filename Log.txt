@@ -53,6 +53,12 @@ If digit was found, I compiled the digit and added to an ArrayList.  If the size
 Day 4
 
 * 1st Star:
+This one felt pretty simple.  Scanned and chopped up each line into two parts: winning numbers and card numbers.
+Winning numbers were placed into a set, then all card numbers were checked against the set.
+If card number is in set, double the cards value (starting at 0).  Add up winning card values for final answer.
+I used a bitwise operation within a ternary operation to deal with doubling a cards value when the card starts with 0 value.  I was quite proud of this one.
+
+** 2nd Star:
 
 
 Files Log:
@@ -62,3 +68,4 @@ Moved all code in DayOne into required compute method.
 Created DayTwo solution.
 Edited Main to add DayTwo and compute answer.
 Edited Main for Day Three.
+Edited Main for Day Four.
