@@ -31,7 +31,7 @@ I spent more time on the System.out formating than the code.
 
 =====
 
-Day 3
+Day Three:
 
 * 1st Star:
 Lots of stuff here.  I loaded the engine schematic into a 2D character array.  Created a set of all known symbols to look for during scanning.
@@ -50,7 +50,7 @@ If digit was found, I compiled the digit and added to an ArrayList.  If the size
 
 =====
 
-Day 4
+Day Four:
 
 * 1st Star:
 This one felt pretty simple.  Scanned and chopped up each line into two parts: winning numbers and card numbers.
@@ -59,7 +59,14 @@ If card number is in set, double the cards value (starting at 0).  Add up winnin
 I used a bitwise operation within a ternary operation to deal with doubling a cards value when the card starts with 0 value.  I was quite proud of this one.
 
 ** 2nd Star:
+This one took me forever.  At first I tried to do a queue system for cards, adding each card to the queue, sorting, then popping element 0 to determine which cards to add
+to the queue (aka card matches).  While this did work, it took FOREVER. During debugging I had the idea to just use two for loops to count the amount of instances
+of each card.  This took a ton of reworking and troubleshooting and a good nights sleep to fix, but I figured it out and it worked instantly.  The code is all over the place
+because I refused to delete anything that didn't work.
 
+=====
+
+Day Five:
 
 Files Log:
 Created Log
@@ -69,3 +76,7 @@ Created DayTwo solution.
 Edited Main to add DayTwo and compute answer.
 Edited Main for Day Three.
 Edited Main for Day Four.
+Relocated all files into a Java project file structure.
+Created .gitignore
+Edited Main for Day Five.
+Created a test file.
