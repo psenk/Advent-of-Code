@@ -1,14 +1,13 @@
-package AdventOfCode;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 
-import Util.Tuple;
+import util.Tuple;
 
 public class DayFour implements Day {
+    boolean gameRunning = true;
     HashSet<Integer> winningNumSet = new HashSet<>();
     HashMap<String, Integer> numCards = new HashMap<>();
     //int totalPoints = 0; // 1st star
@@ -16,12 +15,14 @@ public class DayFour implements Day {
 
     public void compute() {
         try (Scanner sc = new Scanner(new File(".\\Day Four.txt"))) {
-            while (sc.hasNextLine()) {
+            while (gameRunning) {}
+            //while (sc.hasNextLine()) { // 1st star
                 // scanning the ticket
                 //int cardPoints = 0; // 1st star
                 gameNumber++;
                 int numMatches = 0;
                 String lottoTicket = sc.nextLine();
+
                 // making dictionary for amt of times card is drawn
                 if (!numCards.containsKey(lottoTicket)) {
                     numCards.put(lottoTicket, numMatches);
@@ -57,6 +58,7 @@ public class DayFour implements Day {
                 winningNumSet.clear();
                 //System.out.println();
             }
+            gameRunning = false;
         }
         catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
