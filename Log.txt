@@ -68,6 +68,19 @@ because I refused to delete anything that didn't work.
 
 Day Five:
 
+* 1st Star:
+At first I tried to make a ton of dictionaries of Int,Int pairs.  I scanned everything in one line at a time.
+I created all of the appropriate maps, and a list of the maps to access them one at a time.
+Once all the maps were populated, I checked each seed against the maps to get their location, then found the closest.
+This way ended up being so slow it overflowed the heap memory.
+So I reworked it so the seeds are just checked between two edges of a range (srcNum & (srcNum + rng)).
+If a seed mapping was found, the seed pointer moved to the new mapped int to be checked against the next map.
+That int was flagged as changed so the rest of the map wouldn't trigger its change again.
+All final seed mappings were added to array where the lowest number was output.
+
+** 2nd Star
+
+
 Files Log:
 Created Log
 Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
