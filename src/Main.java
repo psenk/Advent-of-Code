@@ -4,7 +4,8 @@ public class Main {
         //Day day = new DayTwo();
         //Day day = new DayThree();
         //Day day = new DayFour();
-        Day day = new DayFive();
+        //Day day = new DayFive();
+        Day day = new DaySix();
         day.compute();
     }
 }
