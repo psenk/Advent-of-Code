@@ -80,6 +80,22 @@ All final seed mappings were added to array where the lowest number was output.
 
 ** 2nd Star
 
+UNFINISHED.
+
+=====
+
+Day Six
+
+* 1st Star
+
+I struggled getting the input data into a format that I liked and could manipulate, took me a while.  This problem was more simple than a few earlier ones.
+I used nesting for loops, the first one to loop through the races, the second to loop through potential times, with a little math work.
+The number of winning attempts was added up, multiplied, and totaled.
+
+** 2nd Star
+
+Modifying the loops to match the new problem wasn't very difficult.  A few bugs to work out -- turns out I used the wrong variable in my race formula.
+Once that was fixed it was smooth sailing.
 
 Files Log:
 Created Log
@@ -93,3 +109,4 @@ Relocated all files into a Java project file structure.
 Created .gitignore
 Edited Main for Day Five.
 Created a test file.
+Edited main for Day Six.
