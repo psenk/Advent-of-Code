@@ -97,6 +97,17 @@ The number of winning attempts was added up, multiplied, and totaled.
 Modifying the loops to match the new problem wasn't very difficult.  A few bugs to work out -- turns out I used the wrong variable in my race formula.
 Once that was fixed it was smooth sailing.
 
+=====
+
+Day Seven
+
+* 1st Star
+First I put the input into a hashmap of card hands and bets.  I then ordered each hand per the prompt, first by hand strength then
+by card ordering.  Found all bet values, totaled, done.
+
+** 2nd Star
+
+
 Files Log:
 Created Log
 Created Day interface w/ compute method.  Implemented in DayOne class.  Created separate Main file for easy compliation.
