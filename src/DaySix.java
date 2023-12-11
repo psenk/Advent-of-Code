@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DaySix implements Day {
@@ -12,7 +11,7 @@ public class DaySix implements Day {
     @Override
     public void compute() {
         int winCount = 0;
-        int margin = 1;
+        //int margin = 1;
         try (Scanner sc = new Scanner(new File("src\\inputs\\Day Six.txt"))) {
             while (sc.hasNextLine()) {
                 sc.next();
