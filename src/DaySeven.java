@@ -14,7 +14,7 @@ public class DaySeven implements Day {
     String gameHand = "";
     int gameBid = 0;
     // A K Q J T 9 8 7 6 5 4 3 2
-    String CARD_ORDER = "AKQJT98765432";
+    String CARD_ORDER = "AKQT98765432J";
     ArrayList<Pair<Integer, char[]>> hands = new ArrayList<>();
     long totalWinnings = 0;
 
