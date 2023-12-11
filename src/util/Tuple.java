@@ -27,4 +27,8 @@ public class Tuple<A, B> implements Pair<A, B> {
     protected void setValue(B value) {
         this.value = value;
     }
+
+    public String toString() {
+        return this.getKey().toString() + " - " + this.getValue().toString();
+    }
 }
