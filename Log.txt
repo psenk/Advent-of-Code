@@ -102,11 +102,26 @@ Once that was fixed it was smooth sailing.
 Day Seven
 
 * 1st Star
+
 First I put the input into a hashmap of card hands and bets.  I then ordered each hand per the prompt, first by hand strength then
 by card ordering.  Found all bet values, totaled, done.
 
 ** 2nd Star
 
+UNFINISHED.
+
+=====
+
+Day eight
+
+* 1st Star
+
+I read the first line in as the route to follow and convered the rest into a hashmap of locations.
+Looped through the map until ZZZ was found.  Feel pretty good about this one.
+
+** 2nd Star
+
+=====
 
 Files Log:
 Created Log
