@@ -4,9 +4,10 @@ public class Main {
         //Day day = new DayTwo();
         //Day day = new DayThree();
         //Day day = new DayFour();
-        //Day day = new DayFive();
+        //Day day = new DayFive(); // need 2nd star
         //Day day = new DaySix();
-        Day day = new DaySeven();
+        //Day day = new DaySeven(); // need 2nd star (OOP? (new Hand(new Card('A'), new Card('A')))...)
+        Day day = new DayEight();
         day.compute();
     }
 }
