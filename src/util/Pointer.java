@@ -1,18 +1,18 @@
 package util;
 
-public class Pointer {
+public class Pointer<T> {
 
-    private int location;
+    private T location;
 
-    public Pointer(int pos) {
+    public Pointer(T pos) {
         this.location = pos;
     }
 
-    public void setLocation(int pos) {
+    public void setLocation(T pos) {
         this.location = pos;
     }
 
-    public int getLocation() {
+    public T getLocation() {
         return location;
     }
 }
