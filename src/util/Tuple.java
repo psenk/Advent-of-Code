@@ -28,6 +28,11 @@ public class Tuple<A, B> implements Pair<A, B> {
         this.value = value;
     }
 
+    public void setBoth(A key, B value) {
+        setKey(key);
+        setValue(value);
+    }
+
     public String toString() {
         return this.getKey().toString() + " - " + this.getValue().toString();
     }

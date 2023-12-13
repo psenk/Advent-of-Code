@@ -8,7 +8,8 @@ public class Main {
         //Day day = new DaySix();
         //Day day = new DaySeven(); // need 2nd star (OOP? (new Hand(new Card('A'), new Card('A')))...)
         //Day day = new DayEight(); // need 2nd star
-        Day day = new DayNine();
+        //Day day = new DayNine(); // need both, skipped this day
+        Day day = new DayTen();
         day.compute();
     }
 }
