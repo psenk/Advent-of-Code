@@ -112,7 +112,7 @@ UNFINISHED.
 
 =====
 
-Day eight
+Day Eight
 
 * 1st Star
 
@@ -122,6 +122,24 @@ Looped through the map until ZZZ was found.  Feel pretty good about this one.
 ** 2nd Star
 
 =====
+
+Day Nine
+
+* 1st Star
+
+** 2nd Star
+
+=====
+
+Day Ten
+
+* 1st Star
+I originally planned on making a graph but decided against it.  Instead I used for loops to find S in the document and recorded its x, y.
+I counted the number of steps in the pipe loop from starting and ending at S.  Divided in half for furthest away position.
+I think the algorithm for traveling the pipes could definitely be more elegant.  But it works.  Maybe an idea for another day.
+
+** 2nd Star
+
 
 Files Log:
 Created Log
