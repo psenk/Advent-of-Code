@@ -20,11 +20,11 @@ public class Tuple<A, B> implements Pair<A, B> {
         return this.value;
     }
 
-    protected void setKey(A key) {
+    public void setKey(A key) {
         this.key = key;
     }
 
-    protected void setValue(B value) {
+    public void setValue(B value) {
         this.value = value;
     }
 
@@ -35,5 +35,12 @@ public class Tuple<A, B> implements Pair<A, B> {
 
     public String toString() {
         return this.getKey().toString() + " - " + this.getValue().toString();
+    }
+
+    public boolean compare(Tuple<A, B> otherTuple) {
+        if (this.key.equals(otherTuple.getKey()) && this.value.equals(otherTuple.getValue())) {
+            return true;
+        }
+        return false;
     }
 }
