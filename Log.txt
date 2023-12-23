@@ -140,6 +140,15 @@ I think the algorithm for traveling the pipes could definitely be more elegant. 
 
 ** 2nd Star
 
+=====
+
+Day Eleven
+
+* 1st Star
+
+Was hesitant about this one at first but I took it one step at a time.  I turned the map into a graph.
+I expanded the graph, put each galaxy (specific node in the graph) in a list, populated each nodes adjacency list and calculated distances.
+Tried to use math at first but it didn't work well -- probably due to integer division?
 
 Files Log:
 Created Log
